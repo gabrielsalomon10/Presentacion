@@ -1,0 +1,371 @@
+body{
+    background: #2e6496;
+}
+
+div{
+    background:#eee;
+    padding: 12px;
+    width: 60%;
+    margin: 0px auto;
+}
+
+#imagen{
+    border-radius: 10px;
+}
+
+#dev{
+    display: block;
+    color: #2e6496;
+    margin-left: 248px;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: 'OpenSans', Helvetica, Arial;
+    font-size: 48px;
+    text-shadow: 0px 2px 1px #222222;
+    transition: all 300ms;
+    padding: auto;
+}
+
+#dev:hover{
+    font-weight: bold;
+    text-shadow: 0px 5px 1px #222222, 0px 0px 8px #2e6496;
+}
+
+.linkedin {
+    position: fixed;
+    top: 75%;
+    left: 8%;
+    width: 8%;
+    height: 11%;
+    border-radius: 30px;
+}
+
+.linkedin img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 7px #eee;
+}
+
+.linkedin .fija-text {
+    padding: 2%;
+    margin-top: -34%;
+    text-align: center;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.linkedin:hover .fija-text {
+    transform: translateY(106%);
+    opacity: 1;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+.git {
+    position: fixed;
+    top: 75%;
+    right: 8%;
+    width: 8%;
+    height: 11%;
+    border-radius: 30px;
+}
+
+.git img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 7px #eee, 0px 0px 14px #eee;
+}
+
+.git .fija-texto {
+    padding: 2%;
+    margin-top: -34%;
+    text-align: center;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.git:hover .fija-texto {
+    transform: translateY(106%);
+    opacity: 1;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 12px;
+    box-shadow: 3px 5px 7px rgb(29, 32, 29);
+    transition: all 300ms;
+    padding: 5%
+}
+
+legend:hover{
+    background: #2e6496;
+    color: black;
+}
+
+#generales:hover{
+    font-size: 16px;
+    background: #555;
+    color: whitesmoke;
+}
+
+#lenguajes:hover{
+    font-size: 18px;
+    background: #555;
+    color: whitesmoke;
+}
+
+#sobre-mi:hover{
+    font-size: 18px;
+    background: #555;
+    color: whitesmoke;
+}
+
+a{
+    color: green;
+}
+
+legend{
+    background: #2e6496;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.no-style{
+    list-style: none;
+}
+
+img{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+    margin-top: -126px;
+    margin-right: 30px;    
+}
+
+span{
+    font-weight: bold;
+}
+
+#banner{
+    width: 70%;
+    height: 80px;
+    color: white;
+    text-align: center;
+    box-shadow: 11px 8px 6px grey;
+    background: url("./img/fondo-banner.jpg");
+    background-position: -200px -200px;
+    margin: 20px auto;
+    margin-right: 52px;
+    margin-top: 43px;
+    display: block;    
+    cursor: pointer;
+    animation: backBanner 5s linear;
+    overflow: visible;
+}
+
+.centered {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+@keyframes backBanner{
+    0%{
+        background-position: 0px 0px;
+    }
+    50%{
+        background-position: 20px -10px;
+    }
+    100%{
+        background-position: 0px 0px;
+    }
+}
+
+#banner h2{
+    display: block;
+    width: 70%;
+    color: white;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 33px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 27px auto;
+    animation: showText 5s linear;
+}
+
+@keyframes showText{
+    0%{
+        transform: translate(-200%) scale(2,3);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(-100%) scale(2,3);
+        transform: translate(100%) scale(2,3);
+        opacity: 1;
+    }
+    75%{
+        transform: translate(-200%) scale(2,3);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%) scale(1,1);
+        text-shadow: 2px 2px 1px  white;
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+
+@media( max-width: 1149px ){
+    #banner{
+        width: 60%;
+    }
+    #banner h2{
+        font-size: 224%;
+    }
+    #dev{
+        margin-left: 17%;
+        font-size: 35px;
+    }
+}
+/* IPAD PRO */
+@media( max-width: 1025px ){
+    #banner{
+        width: 55%;
+    }
+    #banner h2{
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    #dev{
+        margin-left: 17%;
+        font-size: 28px;
+    }
+    .linkedin {
+        top: 69%;
+    }
+    .linkedin img{
+        margin-top: -79%;
+    }
+}
+
+/* IPAD */
+@media( max-width: 768px ){
+    #banner{
+        margin-top: 0%;
+        width: 68%;
+    }
+    #banner h2{
+        font-size: 19px;
+        letter-spacing: 0px;
+    }
+    header img{
+        margin-top: 0%;
+        margin-left: 25%;
+    }
+    #dev{
+        margin-left: 12px;
+    }
+    .git{
+        margin-left: -10%;
+    }
+    .linkedin img {
+        margin-top: -86%;
+    }
+}
+
+/* SURFACE DUO */
+@media( max-width: 540px ){
+    #banner {
+        align-content: center;
+        width: 59%;
+        margin-top: 0%;
+    }
+    header img{
+        margin-top: 0%;
+        margin-left: 25%;
+    }
+    #dev {
+        margin-left: 5%;
+        font-size: 32px;
+    }
+    .linkedin {
+        margin-right: 43%;
+    }
+    .git{
+        margin-left: 22%;
+    }
+}
+
+/* IPHONE 6/7/8 PLUS */
+@media( max-width: 414px ){
+    div {
+        width: 75%;
+    }
+    .linkedin {
+        top: 68%;
+    }
+    #banner {
+        width: 74%;
+        margin: 0px auto;
+    }
+    #banner h2 {
+        font-size: 18px;
+    }
+    header img {
+        margin-top: 10%;
+        margin-left: 22%;
+    }
+    #dev {
+        margin-left: 11%;
+        font-size: 25px;
+    }
+    #generales {
+        width: 80%;
+    }
+}
+
+/* IPHONE 6/7/8/X */
+@media( max-width: 375px ){
+    div {
+        width: 82%;
+    }
+    .linkedin {
+        left: 3%;
+    }
+    .git {
+        right: 3%;
+    }
+    #dev {
+        margin-left: 11%;
+    }
+}
+
+/* IPHONE 5/SE */
+@media( max-width: 320px ){
+    div {
+        width: 94%;
+    }
+    .git {
+        width: 9%;
+        height: 12%;
+        right: -1%;
+    }
+    .linkedin {
+        left: 1%;
+    }
+}
+
+/* ... */
+@media ( max-width: 280px ) {
+    div {
+        width: 109%;
+    }
+}
